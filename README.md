@@ -310,34 +310,34 @@ Web UI
 
 ```text
 Customer_Churn_Prediction_System/
-│
+
 ├── data/
-│
+│   └── raw/
+│       └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+
 ├── models/
 │   ├── logistic_regression_model.pkl
 │   ├── scaler.pkl
 │   └── feature_names.pkl
-│
+
 ├── notebooks/
 │   └── 01_EDA.ipynb
-│
-├── reports/
-│
+
 ├── screenshots/
-│
+│   ├── input_form.png
+│   └── prediction_result.png
+
 ├── src/
-│   └── app.py
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
+│   ├── app.py
+│   └── templates/
+│       ├── index.html
+│       └── result.html
+
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
 
----
 
 ## Installation
 
