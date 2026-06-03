@@ -100,23 +100,11 @@ def predict_form():
         model.predict_proba(df)[0][1]
     )
 
-    return f"""
-    <h1>Prediction Result</h1>
-
-    <h2>
-    Churn Prediction: {prediction}
-    </h2>
-
-    <h2>
-    Churn Probability: {probability:.4f}
-    </h2>
-
-    <br>
-
-    <a href="/">
-        Go Back
-    </a>
-    """
+    return render_template(
+        "result.html",
+        prediction=prediction,
+        probability_percent=round(probability * 100, 2)
+    )
 
 
 if __name__ == "__main__":
